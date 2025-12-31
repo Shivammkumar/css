@@ -1,0 +1,58 @@
+/* Page Body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+#header {
+    background-color: yellow;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* MAIN AREA */
+#main {
+    display: flex;
+    margin: 10px;
+}
+
+/* SIDEBAR */
+#sidebar {
+    background-color: orange;
+    width: 25%;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+/* CONTENT */
+#content {
+    background-color: lightgreen;
+    width: 75%;
+    padding: 20px;
+}
+
+/* POST */
+.post {
+    background-color: lightblue;
+    height: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+#footer {
+    background-color: pink;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    margin: 10px;
+}
