@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 12 Student Registration</title>
+    <link rel="stylesheet" href="register1.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Class 12 Student Registration Form</h2>
+
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="text" id="father" placeholder="Father's Name">
+
+    <select id="gender">
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select>
+
+    <input type="date" id="dob">
+
+    <select id="stream">
+        <option value="">Select Stream</option>
+        <option>Science</option>
+        <option>Commerce</option>
+        <option>Arts</option>
+    </select>
+
+    <input type="number" id="class10" placeholder="Class 10 Marks (%)">
+    <input type="text" id="mobile" placeholder="Mobile Number">
+    <textarea id="address" placeholder="Address"></textarea>
+
+    <button onclick="register()">Register</button>
+     <a href="login1.html">Create Account</a>
+</div>
+
+<div class="container">
+    <h2>Registered Students</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Stream</th>
+            <th>Class 10 %</th>
+            <th>Action</th>
+        </tr>
+        <tbody id="tableData"></tbody>
+    </table>
+</div>
+
+<script src="register1.js"></script>
+
+</body>
+</html>

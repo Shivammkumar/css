@@ -1,0 +1,72 @@
+/* Page background & center align */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #3b5998, #8b9dc3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login box */
+.box {
+    background: #ffffff;
+    width: 350px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.box h2 {
+    text-align: center;
+    color: #3b5998;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button */
+.box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b5998;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+.box button:hover {
+    background-color: #2d4373;
+}
+
+/* Text below button */
+.box p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Link */
+.box a {
+    color: #3b5998;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}

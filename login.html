@@ -1,101 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>WPT Assignment 4</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <html>
+      <head>
+         <title>Student Login</title>
+          <link rel="stylesheet" href="login.css">
+      </head>
+          <body>
+             <h2>Student Login</h2>
+                 <form id="loginForm">
+                 <input type="text" id="loginUsername" placeholder="Username" required><br><br>
+                 <input type="password" id="loginPassword" placeholder="Password" required><br><br>
+               <button type="button" onclick="login()">Login</button>
+                 </form>
+               <p>Don't have an account? <a href="registration.html">Register here</a></p>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+             <script src="login.js"></script>
+          </body>
+ </html>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="login.css">
-</head>
-<body>
-
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">Application Name</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- ===== MAIN CONTENT ===== -->
-<div class="container my-5">
-    <div class="row align-items-center">
-        <div class="col-md-6">
-            <h2>Welcome to Our Website</h2>
-            <p>
-                This is a responsive webpage created using Bootstrap.
-                It works perfectly on desktop and mobile browsers.
-            </p>
-        </div>
-        <div class="col-md-6 text-center">
-            <img src="https://via.placeholder.com/300" class="img-fluid" alt="Image">
-        </div>
-    </div>
-</div>
-
-<!-- ===== FOOTER ===== -->
-<footer class="bg-dark text-white text-center p-3">
-    © 2025 WPT Assignment | All Rights Reserved
-</footer>
-
-<!-- ===== LOGIN MODAL ===== -->
-<div class="modal fade" id="loginModal">
-    <div class="modal-dialog">
-        <div class="modal-content login-box">
-            <div class="modal-header">
-                <h5 class="modal-title">Sign In Here</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <input type="text" class="form-control mb-2" placeholder="User Name">
-                <input type="password" class="form-control mb-2" placeholder="Password">
-                <div class="form-check mb-2">
-                    <input type="checkbox" class="form-check-input">
-                    <label class="form-check-label">Remember me</label>
-                </div>
-                <button class="btn btn-primary w-100">Sign In</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ===== REGISTER MODAL ===== -->
-<div class="modal fade" id="registerModal">
-    <div class="modal-dialog">
-        <div class="modal-content login-box">
-            <div class="modal-header">
-                <h5 class="modal-title">Register Here</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <input type="text" class="form-control mb-2" placeholder="Full Name">
-                <input type="email" class="form-control mb-2" placeholder="Email">
-                <input type="password" class="form-control mb-2" placeholder="Password">
-                <button class="btn btn-success w-100">Register</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
