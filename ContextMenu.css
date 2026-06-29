@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.shape {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.rectangle {
+    background-color: lightblue;
+}
+
+.circle {
+    background-color: lightcoral;
+    border-radius: 50%;
+}
+
+.context-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.context-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.context-menu ul li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.context-menu ul li:hover {
+    background-color: #eee;
+}

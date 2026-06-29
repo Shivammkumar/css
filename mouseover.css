@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #73a429;
+}
+
+#msg {
+    font-size: 18px;
+    color: rgb(128, 0, 0);
+    margin-top: 20px;
+}

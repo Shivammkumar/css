@@ -1,0 +1,49 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 14px;
+    display: block;
+    height: 18px;
+}
+
+/* Container */
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Box */
+.box {
+    background-color: lightblue;
+    border: 2px solid black;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}

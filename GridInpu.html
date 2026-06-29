@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Boxes</title>
+    <link rel="stylesheet" href="GridInpu.css">
+</head>
+<body>
+
+    <h2>Create Boxes</h2>
+
+    <div class="input-group">
+        <input type="number" id="boxCount" placeholder="Enter box (1-10)">
+        <small class="error" id="countError"></small>
+    </div>
+
+    <div class="input-group">
+        <input type="text" id="textValue" placeholder="Enter text">
+        <small class="error" id="textError"></small>
+    </div>
+
+    <div class="input-group">
+        <input type="number" id="sizeValue" placeholder="Enter size (%)">
+        <small class="error" id="sizeError"></small>
+    </div>
+
+    <button onclick="createBoxes()">Create</button>
+
+    <div id="container"></div>
+
+    <script src="GridInpu.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    font-family: Arial;
+    text-align: center;
+}
+
+#box{
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto;
+    line-height: 200px;
+    font-size: 20px;
+    border: 2px solid black;
+}

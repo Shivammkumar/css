@@ -1,0 +1,36 @@
+body{
+    font-family: Arial;
+    background: #c2c4c1;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(207, 146, 15);
+}
+
+.box{
+    background: rgb(158, 32, 85);
+    padding: 16px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(182, 133, 11);
+}
+
+button{
+    padding: 10px 20px;
+    background: rgb(53, 0, 139);
+    color: rgb(235, 20, 34);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(191, 58, 10);
+}
+
+p{
+    font-size: 18px;
+    color: #a00e4b;
+}

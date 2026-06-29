@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session Storage Example</title>
+    <link rel="stylesheet" href="SessionStorage5.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Session Storage Example</h2>
+
+    <p id="message"></p> 
+
+    <label>Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <input type="text" id="output" placeholder="Output will show here" readonly>
+
+    <button onclick="saveData()">Save</button>
+
+    <div class="btn-group">
+        <button onclick="getData()">Retrieve Data</button>
+        <button onclick="clearData()">Clear Data</button>
+    </div>
+</div>
+
+<script src="SessionStorage5.js"></script>
+</body>
+</html>

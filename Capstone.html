@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project - Local Storage</title>
+    <link rel="stylesheet" href="Capstone.css">
+</head>
+<body>
+
+    <div id="loginSection" class="container">
+        <h2>Capstone Project</h2>
+        <div class="card">
+            <div class="header">Website Heading (Company Name, Logo) <br> Menu <button class="login-btn">Login</button></div>
+            <div class="form-box">
+                <div class="input-group">
+                    <label>User Id/Email:</label>
+                    <input type="email" id="loginEmail">
+                </div>
+                <div class="input-group">
+                    <label>Password:</label>
+                    <input type="password" id="loginPass">
+                </div>
+                <button onclick="handleLogin()">Sign In</button>
+                <p>Not registered yet? <button onclick="showSection('registerSection')">Register Now</button></p>
+                <p><button onclick="showSection('forgotSection')">Forgot Password</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="registerSection" class="container" style="display:none;">
+        <h2>Register User</h2>
+        <div class="card">
+            <div class="form-box">
+                <input type="email" id="regEmail" placeholder="Email Id">
+                <input type="password" id="regPass" placeholder="New Password (min 12 chars)">
+                <button onclick="handleRegister()">Register</button>
+                <button onclick="showSection('loginSection')">Back to Login</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="forgotSection" class="container" style="display:none;">
+        <h2>Reset Password</h2>
+        <div class="card">
+            <div class="form-box">
+                <input type="password" id="newPass" placeholder="New Password">
+                <input type="password" id="confirmPass" placeholder="Confirm Password">
+                <button onclick="handleReset()">Reset Password</button>
+                <button onclick="showSection('loginSection')">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dashboardSection" class="container" style="display:none;">
+        <div class="sidebar">
+            <p>Basic Information</p>
+            <p>Contact Details</p>
+            <p>Skills</p>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <div class="main-content">
+            <h2 id="welcomeMsg">Welcome, User</h2>
+            <div class="profile-card">
+                <p><strong>Email:</strong> <span id="dispEmail"></span></p>
+                <p><strong>Last Modified:</strong> <span id="dispDate"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Capstone.js"></script>
+</body>
+</html>

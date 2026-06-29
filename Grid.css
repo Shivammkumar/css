@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container1 {
+    display: grid;
+    grid-template-rows: 100px 1fr 150px;
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* Top Box */
+.header {
+    border: 2px solid black;
+}
+
+/* Middle Section */
+.middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Two Boxes */
+.box {
+    border: 2px solid rgb(255, 191, 0);
+}
+
+/* Bottom Section */
+.footer {
+    border: 2px solid green;
+    padding: 10px;
+}
